@@ -1,0 +1,11 @@
+###
+ # @Author: 崔浩然
+ # @Email：cuihaoran@hualala.com
+ # @Date: 2022-10-20 16:24:47
+ # @Description: 添加pre-commit钩子，检测代码格式
+ # @FilePath: /renekton-ui/.husky/pre-commit
+###
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run lint
