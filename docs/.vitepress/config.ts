@@ -5,6 +5,8 @@
  * @Description: vitepress的配置文件
  * @FilePath: /renekton-ui/docs/.vitepress/config.ts
  */
+import { demoBlockPlugin } from 'vitepress-theme-demoblock';
+
 export default {
   title: 'Renekton UI',
   lang: 'zh-CN',
@@ -32,5 +34,11 @@ export default {
         items: [{ text: 'Button 按钮', link: '/components/button/index' }],
       },
     ],
+  },
+  markdown: {
+    config: md => {
+      // 使用更多的 markdown-it 插件!
+      md.use(demoBlockPlugin);
+    },
   },
 };
