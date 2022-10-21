@@ -1,7 +1,15 @@
+<!--
+ * @Author: 崔浩然
+ * @Email：cuihaoran@hualala.com
+ * @Date: 2022-10-20 15:20:40
+ * @Description: 页面/组件/功能的描述
+ * @FilePath: /renekton-ui/src/App.vue
+-->
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Test from './components/Test';
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
@@ -13,6 +21,7 @@ import Test from './components/Test';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <HelloWorld msg="lalal"></HelloWorld>
   <Test />
 </template>
 
