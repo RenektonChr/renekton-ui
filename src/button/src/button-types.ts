@@ -7,7 +7,7 @@
  */
 import { ExtractPropTypes, PropType } from 'vue';
 
-export type ButtonType = 'primary' | 'default' | 'text';
+export type ButtonType = 'primary' | 'secondary' | 'text';
 
 export const buttonProps = {
   type: {

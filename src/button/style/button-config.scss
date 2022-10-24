@@ -1,0 +1,58 @@
+@import '../../style/variable.scss';
+
+// 按钮类型的配置
+$type: (
+  primary: (
+    color: $rk-light-text,
+    background-color: $rk-primary,
+  ),
+  secondary: (
+    color: $rk-text,
+    background-color: $rk-block,
+    border-color: $rk-line,
+  ),
+  text: (
+    padding: 0,
+    color: $rk-brand-active,
+  ),
+);
+
+// 伪类的配置
+$pseudo: (
+  primary: (
+    hover: (
+      background-color: $rk-primary-hover,
+    ),
+    focus: (
+      background-color: $rk-primary-hover,
+    ),
+    active: (
+      background-color: $rk-primary-active,
+    ),
+  ),
+  secondary: (
+    hover: (
+      border-color: $rk-form-control-line-active,
+      color: $rk-brand-active,
+    ),
+    focus: (
+      border-color: $rk-form-control-line-active,
+      color: $rk-brand-active,
+    ),
+    active: (
+      border-color: $rk-form-control-line-active,
+      color: $rk-brand-active,
+    ),
+  ),
+  text: (
+    hover: (
+      color: $rk-brand-active-focus,
+    ),
+    focus: (
+      color: $rk-brand-active-focus,
+    ),
+    active: (
+      color: $rk-brand-active-focus,
+    ),
+  ),
+);
