@@ -12,11 +12,19 @@ export default defineComponent({
   name: 'RkButton',
   props: buttonProps,
   setup(props: ButtonProps, { slots }) {
-    const { type } = toRefs(props);
+    const { type, size, disabled, block } = toRefs(props);
     console.log(type.value);
     return () => {
       const defaultSlot = slots.default ? slots.default() : '';
-      return <button class={`rk-button rk-button-${type.value}`}>{defaultSlot}</button>;
+      const blockClass = block.value ? 'rk-button--block' : '';
+      return (
+        <button
+          disabled={disabled.value}
+          class={`rk-button rk-button--${type.value} rk-button--${size.value} ${blockClass}`}
+        >
+          {defaultSlot}
+        </button>
+      );
     };
   },
 });

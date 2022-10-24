@@ -6,47 +6,42 @@
  * @FilePath: /renekton-ui/src/App.vue
 -->
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import Test from './components/Test';
 import HelloWorld from './components/HelloWorld.vue';
-
-const onclick = (content: string) => {
-  console.log(content);
-};
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <HelloWorld msg="renekton-ui" class="mb-4"></HelloWorld>
+  <div class="mb-2">
+    <rk-button type="primary" size="medium">确定</rk-button>
+    <rk-button type="secondary" size="medium">取消</rk-button>
+    <rk-button type="text" size="medium">文本</rk-button>
   </div>
-  <HelloWorld msg="崔浩然"></HelloWorld>
-  <Test @click="onclick">
-    <template #default>默认插槽</template>
-    <template #title>title</template>
-  </Test>
-  <!--
-    1. button的类型：primary、text
-    2. button的尺寸：size：default、small、large、block
-   -->
-  <rk-button type="primary">确定</rk-button>
+  <div class="mb-2">
+    <rk-button type="primary" size="small">Small</rk-button>
+    <rk-button type="primary" size="medium">Medium</rk-button>
+    <rk-button type="primary" size="large">Large</rk-button>
+  </div>
+  <div class="mb-2">
+    <rk-button type="secondary" size="small">Small</rk-button>
+    <rk-button type="secondary" size="medium">Medium</rk-button>
+    <rk-button type="secondary" size="large">Large</rk-button>
+  </div>
+  <div class="mb-2">
+    <rk-button type="primary" size="medium">Primary</rk-button>
+    <rk-button type="primary" size="medium" disabled>Primary</rk-button>
+  </div>
+  <div class="mb-2">
+    <rk-button type="secondary" size="medium">Secondary</rk-button>
+    <rk-button type="secondary" size="medium" disabled>Secondary</rk-button>
+  </div>
+  <div class="mb-2">
+    <rk-button type="text" size="small">Text</rk-button>
+    <rk-button type="text" size="small" disabled>Disabled</rk-button>
+  </div>
+  <div class="mb-2">
+    <rk-button type="primary" block>Confirm</rk-button>
+    <rk-button block>Cancel</rk-button>
+  </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>

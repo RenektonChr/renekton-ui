@@ -4,7 +4,9 @@
 .rk-button {
   @include button-base;
 
-  // 按钮类型
+  // type of button
   @include button-variant(button-config.$type);
   @include button-variant(button-config.$pseudo, true);
+  // size of button
+  @include button-variant(button-config.$size);
 }

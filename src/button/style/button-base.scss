@@ -21,12 +21,22 @@
   transition: background-color $rk-animation-duration-slow $rk-animation-ease-in-out-smooth,
     border-color $rk-animation-duration-slow $rk-animation-ease-in-out-smooth,
     color $rk-animation-duration-slow $rk-animation-ease-in-out-smooth;
+
+  // 禁用样式
+  &[disabled] {
+    @apply cursor-not-allowed;
+  }
+
+  // 块级Button
+  &.rk-button--block {
+    @apply block w-full;
+  }
 }
 
 @mixin button-variant($variant, $pseudo: false) {
   @each $key, $value in $variant {
     // 第一层是多态的类型
-    &.rk-button-#{$key} {
+    &.rk-button--#{$key} {
       @each $item-key, $item-value in $value {
         // 第二层是多态类型下的样式
         @if $pseudo {

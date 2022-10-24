@@ -8,11 +8,24 @@
 import { ExtractPropTypes, PropType } from 'vue';
 
 export type ButtonType = 'primary' | 'secondary' | 'text';
+export type ButtonSize = 'large' | 'medium' | 'small';
 
 export const buttonProps = {
   type: {
     type: String as PropType<ButtonType>,
-    default: 'default',
+    default: 'secondary',
+  },
+  size: {
+    type: String as PropType<ButtonSize>,
+    default: 'medium',
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
+  },
+  block: {
+    type: Boolean,
+    default: false,
   },
 } as const;
 
