@@ -10,6 +10,10 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Test from './components/Test';
 import HelloWorld from './components/HelloWorld.vue';
+
+const onclick = (content: string) => {
+  console.log(content);
+};
 </script>
 
 <template>
@@ -22,7 +26,15 @@ import HelloWorld from './components/HelloWorld.vue';
     </a>
   </div>
   <HelloWorld msg="崔浩然"></HelloWorld>
-  <Test />
+  <Test @click="onclick">
+    <template #default>默认插槽</template>
+    <template #title>title</template>
+  </Test>
+  <!--
+    1. button的类型：primary、text
+    2. button的尺寸：size：default、small、large、block
+   -->
+  <rk-button type="primary">确定</rk-button>
 </template>
 
 <style scoped>

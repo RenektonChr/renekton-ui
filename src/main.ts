@@ -10,4 +10,6 @@ import './style.css';
 import App from './App.vue';
 import './index.scss';
 
-createApp(App).mount('#app');
+import RKButton from './button';
+
+createApp(App).use(RKButton).mount('#app');
