@@ -1,6 +1,6 @@
 /*
  * @Author: 崔浩然
- * @Email：cuihaoran@hualala.com
+ * @Email：cuihaoran@gmail.com
  * @Date: 2022-10-21 07:45:14
  * @Description: vitepress的配置文件
  * @FilePath: /renekton-ui/docs/.vitepress/config.ts

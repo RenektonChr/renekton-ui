@@ -1,6 +1,6 @@
 /*
  * @Author: 崔浩然
- * @Email：cuihaoran@hualala.com
+ * @Email：cuihaoran@gmail.com
  * @Date: 2022-10-20 15:53:13
  * @Description: 页面/组件/功能的描述
  * @FilePath: /renekton-ui/.eslintrc.cjs

@@ -1,6 +1,6 @@
 /*
  * @Author: 崔浩然
- * @Email：cuihaoran@hualala.com
+ * @Email：cuihaoran@gmail.com
  * @Date: 2022-10-24 15:53:14
  * @Description: stylelint配置文件
  * @FilePath: /renekton-ui/stylelint.config.js

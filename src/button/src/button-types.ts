@@ -1,6 +1,6 @@
 /*
  * @Author: 崔浩然
- * @Email：cuihaoran@hualala.com
+ * @Email：cuihaoran@gmail.com
  * @Date: 2022-10-24 08:52:29
  * @Description: button的属性对象的定义
  * @FilePath: /renekton-ui/src/button/src/button-types.ts
